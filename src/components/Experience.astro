@@ -1,0 +1,38 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+{
+    date: "mayo 2024 - actualidad",
+    title: "Analista Programador Semi Senior",
+    company: "COMPLEXLESS",
+    description:
+      "La Ventanilla Única de Comercio Exterior – VUCE, es un sistema integrado que permite a los involucrados en operaciones de comercio y transporte gestionar, a través de internet y por una sola vía, los trámites requeridos por las entidades públicas para el ingreso, salida o tránsito de mercancías. Para la eficiencia y escalabilidad se ha usado Spring Boot java 17, base de datos postgreSQL, MongoDB y redis. arquitectura hexagonal, frontend de angular 17, SonarQube, test unitarios y integración continua con jenkins.",
+    link: "https://www.linkedin.com/in/mhuancho08" ,
+  },
+  {
+    date: "Octubre 2018 - mayo 2024",
+    title: "Analista programador",
+    company: "SAGONE - TECHERA",
+    description:
+      "STE - Sistema de Transmisión Eléctrica (OSINERGMIN) para los reportes de planes de inversión y electricidad Desarrollo principal en Java 8 y 11, con un enfoque en la eficiencia y escalabilidad utilizando Spring Boot Y Spring Webflux para aplicaciones reactivas. Se usó las bases de datos relacionales (SQL) como Oracle 12g y bases de datos NoSQL como MongoDB",
+    link: "https://www.linkedin.com/in/mhuancho08" ,
+  },
+  {
+    date: "Enero 2019 - febrero 2024",
+    title: "Consultor freelance",
+    company: "Digiflow by Estela",
+    description:
+      "Atender requerimientos a los clientes que se encuentran involucrados con Facturación Electrónica, instalación del software Ubl 2.1, capacitaciones constantes conforme a las normativas de SUNAT, soporte TI.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
